@@ -10,7 +10,7 @@ interface ITodoListProps {
 const TodoList: React.FC<ITodoListProps> = (props) => {
     const {items, toggleTodo, removeTodo } = props;
   return (
-      <div>
+      <div className="flex flex-col gap-2 min-h-[calc(100vh-10rem)]" >
           {
               items.map(todo => (
                   <TodoItem
